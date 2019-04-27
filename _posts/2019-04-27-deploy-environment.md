@@ -20,9 +20,9 @@ apt似乎默认安装完成后会删除deb包（可能有配置文件可以设�
 ```
 sudo apt install --download-only apache2
 ```
-下载的文件在**/var/cache/apt/archives**目录下，都是一些**.deb**包，相关的依赖也在文件夹下。
+下载的文件在 **/var/cache/apt/archives** 目录下，都是一些\.deb包，相关的依赖也在文件夹下。
 **为了有效安装全部的依赖，避免之前安装过一些包，建议开一个虚拟机从头开始，把所有需要的软件用上面的命令执行一遍，下载到所需的所有依赖。**
-下载完成后将**/var/cache/apt/archives**文件夹拷贝到一个文件夹并打包且生成依赖关系，这里以**/apps**为例。
+下载完成后将 **/var/cache/apt/archives**文件夹拷贝到一个文件夹并打包且生成依赖关系，这里以 **/apps**为例。
 ```
 sudo cp -r /var/cache/apt/archives /apps
 sudo chmod 777 -R /apps
