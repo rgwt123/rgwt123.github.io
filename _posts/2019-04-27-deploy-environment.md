@@ -42,7 +42,7 @@ sudo apt-get install XXXXX
 mv /etc/apt/source.list.bak /etc/apt/source.list
 ```
 
-# 离线pip安装##
+# 离线pip安装
 **pip**也是类似的方法。**pip**下载的是一些wheel文件，可以通过提前下好，建立requirements.txt文件,然后拷贝到离线机器安装。
 比较简单,直接上代码备用.
  ```
