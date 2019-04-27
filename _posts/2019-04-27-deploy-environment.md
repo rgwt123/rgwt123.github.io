@@ -14,7 +14,7 @@ tags:								#标签
 以在ubuntu16.04LTS系统为例，说明如何部署一些常用的软件以及python依赖环境等。
 
 ---
-##离线apt安装##
+# 离线apt安装
 apt本质上是包管理工具，实际安装还是下载的是各种deb包安装的，只是可以自动获取各种依赖关系，下载对应的deb包，然后调用dpkg安装deb包。
 apt似乎默认安装完成后会删除deb包（可能有配置文件可以设置不删除，不知道在哪儿），不过有参数提供了仅下载deb包而不安装的功能。
 ```
@@ -42,7 +42,7 @@ sudo apt-get install XXXXX
 mv /etc/apt/source.list.bak /etc/apt/source.list
 ```
 
-##离线pip安装##
+# 离线pip安装##
 **pip**也是类似的方法。**pip**下载的是一些wheel文件，可以通过提前下好，建立requirements.txt文件,然后拷贝到离线机器安装。
 比较简单,直接上代码备用.
  ```
@@ -56,6 +56,6 @@ pip install --no-index -f=/data/py-packages -r requirements.txt
 ```
 **Success!**
 
-##docker部署##
+# docker部署
 docker功能强大,适合部署,[官方教程](https://docs.docker.com/)很多。具体的在[其他教程]()中总结。
 总之就是打包安装好环境的容器为镜像给别人使用，别人只需要docker安装包以及打包好的镜像文件即可一键部署。
