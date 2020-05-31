@@ -1,0 +1,26 @@
+---
+layout:     post			    # 使用的布局（不需要改）
+title:      tensorflow2学习 				# 标题 
+subtitle:   始于2020 06~ #副标题
+date:       2020-06-01				# 时间
+author:     Tao				# 作者
+header-img: img/post-bg-swift.jpg 	#这篇文章标题背景图片
+catalog: true 						# 是否归档
+tags:								#标签
+    - tensorflow
+---
+
+## 相关网址
+
+## 总体介绍
+
+## 基础
+### Tensor操作
+
+### Layer定义
+
+### 常用函数
+
+## 简单示例
+
+## 数据读取保存相关

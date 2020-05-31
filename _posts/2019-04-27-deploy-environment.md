@@ -57,5 +57,7 @@ pip install --no-index -f=/data/py-packages -r requirements.txt
 **Success!**
 
 # docker部署
-docker功能强大,适合部署,[官方教程](https://docs.docker.com/)很多。具体的在[其他教程]()中总结。
-总之就是打包安装好环境的容器为镜像给别人使用，别人只需要docker安装包以及打包好的镜像文件即可一键部署。
+参见docker的教程
+
+# anaconda3迁移
+如果只需要迁移anaconda环境，可以打包anaconda3/env/目录下的环境的文件夹，直接解压到另一台机器的对应位置。
